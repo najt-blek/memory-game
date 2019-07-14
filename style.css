@@ -6,12 +6,47 @@ body {
 }
 
 #container {
-  width: 500px;
-  height: 500px;
+  width: 580px;
+  height: 760px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  border: 1px solid #333;
+}
+#cards {
+  width: 100%;
+  height: 100%;
+}
+#cards td {
+  border: 1px dashed black;
+  position: relative;
+}
+.card-cell img {
+  display:block;
+  margin: auto;
+  width: 105px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  z-index: 1;
+}
+.card-cell div {
+  width: 105px;
+  height: 150px;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #999;
+  position: absolute;
+  z-index: 2;
+  border: 10px solid white;
+  border-radius: 25px;
+  line-height: 150px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+.uncovered {
+  visibility: hidden;
 }
